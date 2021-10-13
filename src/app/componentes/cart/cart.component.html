@@ -1,0 +1,4 @@
+<h2>Carrito</h2>
+
+<app-item *ngFor="let fruit of pasameFruta" [item]="fruit" (deleteEvent)="deleteFromCart(fruit)"></app-item>
+

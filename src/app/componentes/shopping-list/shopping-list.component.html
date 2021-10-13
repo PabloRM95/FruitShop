@@ -1,0 +1,6 @@
+<h3>Lista de frutas</h3>
+<div class="element-list"><p>Producto</p> <input type="text" placeholder="producto" [(ngModel)]="newFruit.name"></div>
+<div class="element-list"><p>Cantidad</p> <input type="number" [(ngModel)]="newFruit.quantity"></div>
+<div class="element-list"><p>Precio</p> <input type="number" [(ngModel)]="newFruit.price"></div>
+<button (click)=addFruit() >Añadir al carrito</button>
+<app-cart [pasameFruta] = "fruitList" (deleteEvent)="deleteFruit($event)"></app-cart>
